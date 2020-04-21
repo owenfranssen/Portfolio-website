@@ -1,0 +1,33 @@
+.btn-outline-white {
+  @extend .btn-outline-light;
+  color: white;
+  border-color: white;
+}
+
+.bg-gray-100 {
+  background-color: $gray-100;
+}
+
+.bg-gray-200 {
+  background-color: $gray-200;
+}
+
+.bg-gray-300 {
+  background-color: $gray-300;
+}
+
+.bg-gray-400 {
+  background-color: $gray-400;
+}
+
+.bg-blue-pale {
+  background-color: $blue-pale;
+}
+
+.bg-blue-xl {
+  background-color: $blue-xtra-light;
+}
+
+h2, .h2 { 
+  color: $primary;
+}

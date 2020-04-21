@@ -1,0 +1,116 @@
+// Override Bootstrap !defaults as required
+
+$font-size-base: 1rem;
+$enable-rounded: false;
+$enable-responsive-font-sizes: true;
+$grid-gutter-width: 60px;
+
+$blue-dark: #001b29;
+$blue-light: #003853;
+$blue-pale: #009EED;
+$blue-xtra-light: rgb(100, 203, 255);
+$mustard: #A17F10;
+$camo: #A19C08;
+$orange: #A13610;
+
+$primary: $blue-light;
+$dark: $blue-dark;
+$light: $blue-xtra-light;
+$secondary: $orange;
+$info: $blue-pale;
+$danger: $orange;
+
+$tooltip-bg: $primary;
+
+// source: https://getbootstrap.com/docs/4.0/getting-started/theming/
+// Default colours
+/*
+  $white:    #fff !default;
+  $gray-100: #f8f9fa !default;
+  $gray-200: #e9ecef !default;
+  $gray-300: #dee2e6 !default;
+  $gray-400: #ced4da !default;
+  $gray-500: #adb5bd !default;
+  $gray-600: #868e96 !default;
+  $gray-700: #495057 !default;
+  $gray-800: #343a40 !default;
+  $gray-900: #212529 !default;
+  $black:    #000 !default;
+
+  $blue:    #007bff !default;
+  $indigo:  #6610f2 !default;
+  $purple:  #6f42c1 !default;
+  $pink:    #e83e8c !default;
+  $red:     #dc3545 !default;
+  $orange:  #fd7e14 !default;
+  $yellow:  #ffc107 !default;
+  $green:   #28a745 !default;
+  $teal:    #20c997 !default;
+  $cyan:    #17a2b8 !default;
+
+  $primary:       $blue !default;
+  $secondary:     $gray-600 !default;
+  $success:       $green !default;
+  $info:          $cyan !default;
+  $warning:       $yellow !default;
+  $danger:        $red !default;
+  $light:         $gray-100 !default;
+  $dark:          $gray-800 !default;
+*/
+// Use as below:
+/*
+  // With variable
+  .alpha { color: $purple; }
+
+  // From the Sass map with our `color()` function
+  .beta { color: color("purple"); }
+*/
+
+// Specify only the variables you want to change, or add new custom named ones
+/*
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+*/
+// Use as below:
+/*
+  .custom-element {
+    color: gray("100");
+    background-color: theme-color("dark");
+  }
+
+  .custom-element {
+    color: theme-color-level(primary, -10); // - lightens, + darkens
+  }
+*/
+
+// Grid breakpoints
+/*
+  $grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+  ) !default;
+*/
+
+// Font size
+/*
+  $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+
+  $h1-font-size:                $font-size-base * 2.5 !default;
+  $h2-font-size:                $font-size-base * 2 !default;
+  $h3-font-size:                $font-size-base * 1.75 !default;
+  $h4-font-size:                $font-size-base * 1.5 !default;
+  $h5-font-size:                $font-size-base * 1.25 !default;
+  $h6-font-size:                $font-size-base !default;
+*/
+/* Font Weights: Bootstrap uses 300, 400, 500 and 700 weights */

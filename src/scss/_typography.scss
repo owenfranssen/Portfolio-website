@@ -1,0 +1,36 @@
+@import 'fonts';
+
+%body_type {
+  font-family: $body-font, Arial, sans-serif;
+  font-size: $font-size-base;
+  font-weight: 300;
+}
+
+%header_type {
+  font-family: $heading-font, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+body {
+  @extend %body_type;
+}
+
+h1, h2, h3, h4, h5, h6, .heading, .h1, .h2, .h3, .h4, .h5, .h6 {
+  @extend %header_type;
+}
+
+b, strong, .bold {
+  font-weight: 400;
+}
+
+.light {
+  font-weight: 200;
+}
+
+small, .small {
+  font-size: 75%;
+}
+
+.large {
+  font-size: 125%;
+}

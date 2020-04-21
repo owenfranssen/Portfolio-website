@@ -1,0 +1,21 @@
+// header {
+//   display: none;
+//   //height: 75px;
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 9999;
+// }
+
+header {
+  &.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+  }
+
+  .nav-link {
+    color: #fff;
+  }
+}

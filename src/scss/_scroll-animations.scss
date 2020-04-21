@@ -1,0 +1,51 @@
+/* SLIDE ANIMATIONS */
+
+.a-slide-right {
+  transform: translateX(-150px);
+  animation: slide-X 0.8s ease forwards;
+}
+
+.a-slide-left {
+  transform: translateX(150px);
+  animation: slide-X 0.8s ease forwards;
+}
+
+.a-slide-up {
+  transform: translateY(-150px);
+  animation: slide-Y 0.8s ease forwards;
+}
+
+.a-slide-down {
+  transform: translateY(150px);
+  animation: slide-Y 0.8s ease forwards;
+}
+
+.a-slide:nth-child(odd) {
+  /* Stagger animations */
+  animation-duration: 0.6s; 
+}
+
+@keyframes slide-Y {
+  to { transform: translateY(0); }
+}
+
+@keyframes slide-X {
+  to { transform: translateX(0); }
+}
+
+
+/* FADE ANIMATIONS */
+
+.a-fade {
+  opacity: 0.1;
+  animation: fade 0.8s ease-in forwards; 
+}
+
+.a-fade:nth-child(odd) {
+  /* Stagger animations */
+  animation-duration: 1s; 
+}
+
+@keyframes fade {
+  to { opacity: 1; }
+}
